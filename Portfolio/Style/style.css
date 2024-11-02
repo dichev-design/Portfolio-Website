@@ -8,14 +8,15 @@
 }
 
 body{
-   margin: 40px 250px;
    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
 }
+
 
 .nav-container{
     display: flex;
     justify-content: space-between;
 }
+
 
 .off-screen_menu{
     background-color: rgb(251, 251, 251);
@@ -24,13 +25,13 @@ body{
     max-width: 100%;
     position: fixed;
     top: 0;
-    right: -1440px;
+    right: -1980px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     transition: .3s ease;
 }
 
@@ -39,18 +40,18 @@ body{
 }
 
 .ham-menu {
-    height: 50px;
-    width: 50px;
+    height: 1.2rem;
+    width: 1.2rem;
     margin-left: auto;
     position: relative;
     cursor: pointer;
 }
 
 .ham-menu span {
-    height: 5px;
+    height: 2px;
     width: 100%;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,7 +84,64 @@ body{
 }
 
 .nav-logo_main{
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #ffffff;
+}
+
+.main-profile_section {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 13rem;
+}
+
+.main-avatar {
+    max-width: 150px;
+}
+
+.avatar-pic {
+    width: 150px;
+}
+
+.avatar-heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.avatar-paragraph {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.main-details p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+@media (min-width: 1280px) {
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 700px;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 700px;
+        padding-top: 25px;
+    }
 }
