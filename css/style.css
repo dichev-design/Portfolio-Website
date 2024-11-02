@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+/* VARIABLES */
+
+/* COLORS */
+:root {
+    --primary: #000000;
+    --secondary: #393939;
+
+}
+
+/* FONT SIZE */
+
+:root {
+    --primary-font: 48px;
+    --secondary-font: 24px;
+    --paragraph: 16px;
+}
+
+/* MAIN SECTION SIZE  */
+
+.main-section {
+    margin: 20px 180px;
+
+}
+
+/* Main Navigation Styling */
+
+.title h1 {
+    font-size: var(--primary-font);
+    font-weight: 600;
+}
+
+.title h3 {
+    font-size: var(--paragraph);
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+/* MAIN NAVIGATION STYLING */
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 40px 0;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.list-item a{
+    color: var(--primary);
+}
+
+.list-item::after {
+    content: "";
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms ease-in;
+}
+
+.list-item:hover::after {
+    width: 100%;
+}
+
